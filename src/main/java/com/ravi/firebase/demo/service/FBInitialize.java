@@ -20,7 +20,7 @@ public class FBInitialize {
     public void init() {
         try {
             Resource resource = resourceLoader.getResource(
-                    "classpath:choco-bar-firebase-adminsdk-jgg47-4c4b2a2814.json");
+                    "classpath:spring-boot-firebase-nonprod.json");
             FileInputStream serviceAccount =
                     new FileInputStream(resource.getFile());
 

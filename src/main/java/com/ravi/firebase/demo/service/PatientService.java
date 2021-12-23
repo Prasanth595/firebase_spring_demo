@@ -47,6 +47,6 @@ public class PatientService {
     public String deletePatient(String name) {
         Firestore dbFirestore = FirestoreClient.getFirestore();
         ApiFuture<WriteResult> writeResult = dbFirestore.collection(COL_NAME).document(name).delete();
-        return "Document with Patient ID " + name + " has been deleted";
+        return "Document with Patient ID " + name + " has been deleted" + writeResult;
     }
 }
